@@ -13,4 +13,3 @@
    docs/接入说明.md
    docs/获取API令牌.md
    docs/API调用说明.md
-   docs/API接口.md
