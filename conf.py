@@ -108,6 +108,12 @@ htmlhelp_basename = 'APIdoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = 'xelatex'
+latex_use_xindy = False
+latex_elements = {
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
+}
+
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
