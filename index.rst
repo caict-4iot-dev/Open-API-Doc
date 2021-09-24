@@ -10,6 +10,7 @@
    :maxdepth: 2
 
    docs/文档修订记录.md
-   docs/接入说明.md
-   docs/获取API令牌.md
-   docs/API调用说明.md
+   docs/1-接入说明.md
+   docs/2-获取API令牌.md
+   docs/3-API调用说明.md
+   docs/API接口/index.rst
