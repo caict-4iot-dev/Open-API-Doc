@@ -10,17 +10,17 @@
 
 请求参数说明：
 
-| **字段名**    | **类型** | **是否必填** | **描述**     |
-| ------------- | -------: | ------------ | ------------ |
-| chainCode     |   String | 是           | AC号         |
-| name          |   String | 是           | 模板名称     |
-| desc          |   String | 否           | 模板描述     |
-| data          |     List | 是           | 模板属性数据 |
-| data.nameCn   |   String | 是           | 中文名称     |
-| data.nameEn   |   String | 是           | 英文名称     |
-| data.dataType |   String | 是           | 数据类型     |
-| data.minLen   |  Integer | 是           | 最小长度     |
-| data.maxLen   |  Integer | 是           | 最大长度     |
+| **字段名**    |    **类型** | **是否必填** | **描述**                                       |
+| ------------- | ----------: | ------------ | ---------------------------------------------- |
+| chainCode     |   String(4) | 是           | AC号                                           |
+| name          | String(128) | 是           | 模板名称                                       |
+| desc          | String(512) | 否           | 模板描述                                       |
+| data          |        List | 是           | 模板属性数据                                   |
+| data.nameCn   | String(128) | 是           | 中文名称                                       |
+| data.nameEn   | String(128) | 是           | 英文名称                                       |
+| data.dataType |      String | 是           | 数据类型。参考[模板数据类型](#19 模板数据类型) |
+| data.minLen   |     Integer | 是           | 最小长度                                       |
+| data.maxLen   |     Integer | 是           | 最大长度                                       |
 
 返回数据：
 
@@ -82,7 +82,7 @@ b. 接口调用失败，则返回JSON数据示例为：
 ```plain
 {
     "errorCode": 940000,
-    "message": "系统内部异常"
+    "message": "系统内部错误"
 }
 ```
 
