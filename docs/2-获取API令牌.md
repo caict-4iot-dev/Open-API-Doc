@@ -10,12 +10,13 @@ https://{url}/auth/getAccessToken
   "api_secret":"f174bf944fa9c57e1f452ec69df5a84c49caec90"
 }
 ```
+
 请求参数说明：
 
-|**字段名**|**类型**|**是否必填**|**描述**|
-|:----|----:|:----|:----|
-|api_key|String|是|api_key|
-|api_secret|String|是|api_secret|
+| **字段名** | **类型** | **是否必填** | **描述**   |
+| :--------- | -------: | :----------- | :--------- |
+| api_key    |   String | 是           | api_key    |
+| api_secret |   String | 是           | api_secret |
 
 
 成功的返回JSON数据：
@@ -30,9 +31,10 @@ https://{url}/auth/getAccessToken
     "message": "操作成功"
 }
 ```
+
 响应参数说明：
 
-|**字段名**|**类型**|**描述**|
-|:----|:----|:----|
-|accessToken|String|请求API令牌|
-|expireIn|Long|有效期 （单位：秒）|
+| **字段名**  | **类型** | **描述**            |
+| :---------- | :------- | :------------------ |
+| accessToken | String   | 请求API令牌         |
+| expireIn    | Long     | 有效期 （单位：秒） |
