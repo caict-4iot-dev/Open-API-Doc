@@ -12,7 +12,7 @@
 
 | **字段名**    |    **类型** | **是否必填** | **描述**                                       |
 | ------------- | ----------: | ------------ | ---------------------------------------------- |
-| chainCode     |   String(4) | 是           | AC号                                           |
+| ACSN          |   String(4) | 是           | AC号                                           |
 | name          | String(128) | 是           | 模板名称                                       |
 | desc          | String(512) | 否           | 模板描述                                       |
 | data          |        List | 是           | 模板属性数据                                   |
@@ -40,7 +40,7 @@ https://{url}/v1/bid/template/syn
 {
 "accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IkZDMjFnN2JzMVI2TjJGWjMiLCJpc3MiOiJidW1vIiwiZXhwIjoxNTYxMDAyODIyfQ.hgVH0T6fLxk973U2fIj_ejDx5aJuzRFlg1VAUA2RgzM",
   "params":{
-  	"chainCode":"",
+  	"ACSN":"",
     "name": "模板名称",
     "desc": "模板描述",
 		"data":[
@@ -125,11 +125,11 @@ b. 接口调用失败，则返回JSON数据示例为：
 | didDocument.extension.delegateSign.signatureValue | String   | 签名的base64编码                                    |
 | didDocument.extension.type                        | int      | **见 12BID对象类型表**                              |
 | didDocument.extension.attributes                  | List     | 一组属性,属性结构见属性结构章节                     |
-| didDocument.extension.acsns                       | List     | AC号列表                                            |
-| didDocument.extension.acsns.acsn                  | String   | AC号                                                |
-| didDocument.extension.acsns.acsnAddress           | String   | AC号对应的子链的解析地址BID                         |
+| didDocument.extension.ACSNList                    | List     | AC号列表                                            |
+| didDocument.extension.ACSNList.ACSN               | String   | AC号                                                |
+| didDocument.extension.ACSNList.ACSNAddress        | String   | AC号对应的子链的解析地址BID                         |
 | didDocument.extension.verifiableCredentials       | List     | 凭证列表，只有主链是凭证类型的BID文档才可能有本字段 |
-| didDocument.extension.verifiableCredentials.id    | String   | 凭证ID                                              |
+| didDocument.extension.verifiableCredentials.id    | String   | 凭ID                                                |
 | didDocument.extension.verifiableCredentials.type  | Int      | 凭证类型 14凭证类型表                               |
 | didDocument.service                               | List     | 一组服务地址                                        |
 | didDocument.service.id                            | String   | 服务地址的ID                                        |
